@@ -1,0 +1,5 @@
+ansible prueba -m ping -i inventory.txt
+ansible-playbook playbook-copyfile.yaml -i hosts
+ansible-playbook playbook-fecha_hora.yaml -i hosts
+ansible-playbook playbook-create_folder_copy_file.yaml -i hosts
+ssh -i ansib.pem admin@123.1.0.96

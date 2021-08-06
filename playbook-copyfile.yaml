@@ -1,0 +1,10 @@
+---
+-  hosts: ucreativa
+   tasks:
+      - name: copying file with playbook
+        copy:
+          src: /home/admin/proyect/clase-07292021/test.txt
+          dest: /home/admin/
+          owner: admin
+          group: admin
+          mode: 0644

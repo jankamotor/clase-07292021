@@ -1,0 +1,15 @@
+---
+- name: Create directory on /tmp remote hosts
+  hosts: ucreativa
+  tasks:
+  - name: Creating a new directory
+    file:
+      path: /tmp/ucreativa
+      state: directory
+  - name: copying file with playbook
+    copy:
+      src: /home/admin/proyect/clase-07292021/notas.txt
+      dest: /tmp/ucreativa
+      owner: admin
+      group: admin
+      mode: 0644
